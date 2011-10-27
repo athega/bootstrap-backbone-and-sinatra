@@ -1,8 +1,6 @@
 source :rubygems
 
 gem "sinatra", "~> 1.3"
-gem "haml", "~> 3.1"
-
 gem "yajl-ruby", "~> 1.0", :require => 'yajl'
 
 group :development do
