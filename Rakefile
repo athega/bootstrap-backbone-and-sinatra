@@ -16,3 +16,7 @@ rescue LoadError
     abort "Jasmine is not available. In order to run jasmine, you must: (sudo) gem install jasmine"
   end
 end
+
+task :foreman do
+  exec('foreman start --procfile=DevProcfile')
+end
