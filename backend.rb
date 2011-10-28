@@ -5,6 +5,6 @@ class Backend < Sinatra::Base
   end
 
   get '/' do
-    'Hello world'
+    erb :index
   end
 end
