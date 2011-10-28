@@ -5,6 +5,6 @@ require 'bundler'
 
 Bundler.require
 
-require_relative 'backend.rb'
+require './backend.rb'
 
 run Backend
