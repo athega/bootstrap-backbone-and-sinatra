@@ -4,4 +4,4 @@ describe "Player", ->
 
   it "should be able to play", ->
     @player.play()
-    (expect @player.playing).toEqual true
+    (expect @player.playing).toBeTruthy()
