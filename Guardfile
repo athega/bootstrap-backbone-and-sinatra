@@ -6,4 +6,7 @@ guard 'coffeescript', :output => 'spec/javascripts' do
   watch /^spec\/coffeescripts\/(.*)\_spec.coffee/
 end
 
-guard 'sass', :input => 'app/stylesheets', :output => 'public/stylesheets'
+guard 'sass', :input => 'app/stylesheets',
+              :output => 'public/stylesheets',
+              :hide_success => true,
+              :style => :compressed
