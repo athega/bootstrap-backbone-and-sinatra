@@ -1,7 +1,25 @@
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+
 @import "base";
 @import "skeleton";
 @import "layout";
 
+h1, h2 {
+  font-family: 'Yanone Kaffeesatz', cursive;
+}
+
 body {
   text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  padding: 2em 0;
+  background: #fff;
+  border-radius: 3px;
 }
