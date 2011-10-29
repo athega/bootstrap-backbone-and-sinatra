@@ -1,8 +1,11 @@
 module Jasmine
   class Config
 
-    # Add your overrides or custom config code here
-
+    def start_server(port = 8888)
+      server = Rack::Server.new(:Port => port, :AccessLog => [], :server => 'thin')
+      server.instance_variable_set(:@app, Jasmine.app(self)) # workaround for Rack bug, when Rack > 1.2.1 is released Rack::Server.start(:app => Jasmine.app(self)) will work
+      server.start
+    end
   end
 end
 
