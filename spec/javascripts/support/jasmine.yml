@@ -2,10 +2,10 @@ src_dir: public/javascripts
 
 src_files:
   - lib/jquery-1.6.4.min.js
+  - lib/underscore-min.js
   - lib/sinon-1.2.0.js
-  - lib/underscore.js
   - lib/backbone-min.js
-  - "*.js"
+  - "**/*.js"
 
 spec_dir: spec/javascripts
 
